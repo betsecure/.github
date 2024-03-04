@@ -1,0 +1,39 @@
+name: Publish container image (with pre-build)
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  pre-build:
+    name: Pre-build
+    runs-on: macos-latest
+
+    steps:
+      # Do the actual pre-build steps
+      - name: Pre-build
+        run: |
+          system_profiler SPHardwareDataType > hardware.txt
+          system_profiler SPSoftwareDataType > software.txt
+
+      # Archive what you need into a compressed tarball
+      - name: Create artifact
+        run: tar -czf artifacts/pre-build.tar.gz hardware.txt software.txt
+
+      # Upload the artifact
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hardware-and-software
+          path: artifacts/pre-build.tar.gz
+
+  publish:
+    name: Nomad
+    uses: betsecure/nomad-workflows/.github/workflows/container.yml@main
+    secrets: inherit
+    # Wait for the pre-build job to finish
+    needs: pre-build
+    with:
+      # The name must match the one used in the "Upload artifact" step
+      pre-build-artifact: hardware-and-software

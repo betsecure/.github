@@ -1,0 +1,12 @@
+name: Publish container image
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  container:
+    name: BetSecure
+    uses: betsecure/github-actions/.github/workflows/container.yml@main
+    secrets: inherit

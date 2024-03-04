@@ -1,0 +1,17 @@
+name: Continuous integration
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: 0 14 * * 0 # Every Sunday, at midnight AEST
+
+jobs:
+  ci:
+    name: BetSecure
+    uses: betsecure/github-actions/.github/workflows/ci.yml@main
+    secrets: inherit
+    with: # all services are optional, default to false
+      localstack: false
+      minio: false
+      postgres: false
