@@ -1,2 +1,1 @@
-# .github
-Organization-wide GitHub configuration.
+# BetSecure GitHub configuration
