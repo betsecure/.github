@@ -1,0 +1,15 @@
+name: Publish GitHub release
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  shared:
+    name: Nomad
+    uses: betsecure/github-actions/.github/workflows/github-release.yml@main
+    secrets: inherit
+    permissions:
+      contents: write
+      discussions: write

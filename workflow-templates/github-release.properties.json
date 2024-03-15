@@ -1,0 +1,6 @@
+{
+  "name": "Publish GitHub release",
+  "description": "BetSecure GitHub release publishing workflow.",
+  "iconName": "icon",
+  "categories": ["Automation"]
+}
