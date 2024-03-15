@@ -1,4 +1,4 @@
-name: Publish container image (with pre-build)
+name: Publish container image
 
 on:
   push:
