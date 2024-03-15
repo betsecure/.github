@@ -2,5 +2,15 @@
   "name": "Continuous integration",
   "description": "BetSecure continuous integration workflow.",
   "iconName": "icon",
-  "categories": ["Continuous integration"]
+  "categories": [
+    "Continuous integration",
+    "C#",
+    "Go",
+    "Java",
+    "JavaScript",
+    "Kotlin",
+    "Objective-C",
+    "Swift",
+    "TypeScript"
+  ]
 }

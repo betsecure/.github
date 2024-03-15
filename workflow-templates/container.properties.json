@@ -2,5 +2,15 @@
   "name": "Publish container image",
   "description": "BetSecure container image and chart publishing workflow.",
   "iconName": "icon",
-  "categories": ["Deployment"]
+  "categories": [
+    "Deployment",
+    "C#",
+    "Go",
+    "Java",
+    "JavaScript",
+    "Kotlin",
+    "Objective-C",
+    "Swift",
+    "TypeScript"
+  ]
 }

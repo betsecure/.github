@@ -2,6 +2,16 @@
   "name": "Publish container image (with pre-build)",
   "description": "BetSecure container image and chart publishing workflow, with a pre-build job.",
   "iconName": "icon",
-  "categories": ["Deployment"],
+  "categories": [
+    "Deployment",
+    "C#",
+    "Go",
+    "Java",
+    "JavaScript",
+    "Kotlin",
+    "Objective-C",
+    "Swift",
+    "TypeScript"
+  ],
   "filePatterns": ["^nuget\\.config", "^Package\\.swift$"]
 }
