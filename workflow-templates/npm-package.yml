@@ -1,0 +1,12 @@
+name: Publish NPM Package
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  shared:
+    name: BetSecure
+    uses: betsecure/github-actions/.github/workflows/npm-package.yml@main
+    secrets: inherit
