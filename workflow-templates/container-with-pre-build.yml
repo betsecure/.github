@@ -29,8 +29,8 @@ jobs:
           path: artifacts/pre-build.tar.gz
 
   publish:
-    name: Nomad
-    uses: betsecure/nomad-workflows/.github/workflows/container.yml@main
+    name: BetSecure
+    uses: betsecure/github-actions/.github/workflows/container.yml@main
     secrets: inherit
     # Wait for the pre-build job to finish
     needs: pre-build
