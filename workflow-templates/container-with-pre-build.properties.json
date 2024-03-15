@@ -2,5 +2,5 @@
   "name": "Publish container image (with pre-build)",
   "description": "BetSecure container image and chart publishing workflow, with a pre-build job.",
   "iconName": "icon",
-  "categories": ["Deployment", "C#", "Swift"]
+  "categories": ["Deployment", "Dockerfile", "C#", "Swift"]
 }
