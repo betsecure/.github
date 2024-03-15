@@ -2,5 +2,5 @@
   "name": "Publish container image",
   "description": "BetSecure container image and chart publishing workflow.",
   "iconName": "icon",
-  "categories": ["deployment"]
+  "categories": ["Deployment"]
 }
