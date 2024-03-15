@@ -1,0 +1,6 @@
+{
+  "name": "Continuous integration",
+  "description": "BetSecure continuous integration workflow.",
+  "iconName": "icon",
+  "categories": ["continuous-integration"]
+}
