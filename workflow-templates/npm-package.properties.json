@@ -2,5 +2,5 @@
   "name": "Publish NPM package",
   "description": "BetSecure NPM package publishing workflow.",
   "iconName": "icon",
-  "categories": ["Deployment", "npm"]
+  "categories": ["Deployment", "npm", "TypeScript", "JavaScript"]
 }
