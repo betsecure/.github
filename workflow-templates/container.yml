@@ -10,3 +10,7 @@ jobs:
     name: BetSecure
     uses: betsecure/github-actions/.github/workflows/container.yml@main
     secrets: inherit
+    with:
+      # The space-separated container tags to apply to the image
+      # Defaults to the ref name, e.g. "refs/tags/v1.0.0" -> "v1.0.0"
+      container-tags: ${{ github.ref_name }}
