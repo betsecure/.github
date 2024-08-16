@@ -11,6 +11,9 @@ jobs:
     uses: betsecure/github-actions/.github/workflows/container.yml@main
     secrets: inherit
     with:
-      # The space-separated container tags to apply to the image
+      # The version number to use for the chart image
+      # Defaults to the ref name, e.g. "refs/tags/v1.0.0" -> "v1.0.0"
+      chart-version: ${{ github.ref_name }}
+      # The space-separated container tags to apply to the container image
       # Defaults to the ref name, e.g. "refs/tags/v1.0.0" -> "v1.0.0"
       container-tags: ${{ github.ref_name }}
